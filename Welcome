@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+#include <conio.h>
+
+class PrtWords {
+
+private:
+	std::string astr;
+
+public:
+	PrtWords() {}
+
+		void setnAndStr() { std::string strname = ""; std::cin >> strname; astr = strname; }
+
+		void printingWelcome() {
+			std::cout << std::endl << std::endl << std::endl << std::endl << std::endl;
+			std::cout << std::endl << "            " << "Welcome " << astr << "to My first GitHub app (^ - ^)" << std::endl;
+			std::cout << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl;
+			std::cout << "Beginner developer, I am from IRAQ from Baghdad specifically. I hope this like U. Thank U to reading."<<std::endl << std::endl;
+			std::cout << std::endl << "           Coding By: " <<(char)0xA9 << " Karrar Mohammed" << std::endl;
+		}
+
+	};
+
+	int main()
+	{
+		char cr = ' ';
+		PrtWords pw;
+		
+		std::cout << "Your name please (^-^).... ";
+		pw.setnAndStr();
+		system("cls");
+		pw.printingWelcome(); 
+		std::cout << std::endl << "          Hit ENTER to close .......";
+		system("pause");
+		return 0;
+
+	}
